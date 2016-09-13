@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="InkAlert.Area">
+    <Position X="11.75" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAQKAIAACEgAEIAAIBCABAAgAACAAAAAgAAAAACAAgA=</HashCode>
+      <FileName>Classes\Area.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Consumable">
+    <Position X="8.25" Y="5.25" Width="3" />
+    <TypeIdentifier>
+      <HashCode>IAQCCAAAAEAAAAACAAAABIIgAIIAAAAgAAAAYACAAkA=</HashCode>
+      <FileName>Classes\Consumable.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Database">
+    <Position X="15.5" Y="1.25" Width="10.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAgAgAAQAQRQAAFQQAQAAAIAAAEAAAABAAAAAAA=</HashCode>
+      <FileName>Classes\Database.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.DataGridViewColumnSelector">
+    <Position X="3.5" Y="21.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>ABAABRAAAAAAAAAAAIBAAEAAAAAAAAAAAAAAAAAAEAA=</HashCode>
+      <FileName>Classes\DataGridViewColumnSelector.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.DateEngine">
+    <Position X="8.75" Y="21.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAgAAQAAAAEAACAAADAABAAFAAEAAQAAAgA=</HashCode>
+      <FileName>Classes\DateEngine.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.FileHelper.FileHelper.FileHelper.FileHelper.EventLogger">
+    <Position X="12.5" Y="21.75" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\FileHelper.FileHelper.FileHelper.FileHelper.EventLogger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.FileManager">
+    <Position X="12.5" Y="23.25" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AABIAAAAAAAAQAAAIAQAACAAAAAAAAAEIEIACABACAA=</HashCode>
+      <FileName>Classes\FileManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.FilterDataGridView">
+    <Position X="0.5" Y="23.5" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\FilterView.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.GlobalSetup">
+    <Position X="34.5" Y="6" Width="3.5" />
+    <InheritanceLine Type="InkAlert.Database" FixedToPoint="true">
+      <Path>
+        <Point X="20.75" Y="6.141" />
+        <Point X="20.75" Y="6.54" />
+        <Point X="26.292" Y="6.54" Type="JumpStart" />
+        <Point X="26.458" Y="6.54" Type="JumpEnd" />
+        <Point X="31" Y="6.54" />
+        <Point X="31" Y="9.04" />
+        <Point X="34.125" Y="9.04" />
+        <Point X="34.125" Y="10.433" />
+        <Point X="34.5" Y="10.433" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>MJAECQyQAAAAEQAgBFOACQQDAgAAAA4EQACIEAAABCA=</HashCode>
+      <FileName>Classes\GlobalSetup.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.ICounterCycle">
+    <Position X="4.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAQCAAAAAEAAQAACAAAABgAgBAAAAAAAAAAACACAAgA=</HashCode>
+      <FileName>Classes\iCounterCycle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Informe">
+    <Position X="0.5" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAQKAIAACEgAEIAAIBCABAAgAACAAAAAgAAAAACAAgA=</HashCode>
+      <FileName>Classes\Informe.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Location">
+    <Position X="6.5" Y="0.5" Width="4.75" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAEAAAgAAgAIABgAgAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Classes\Location.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.NetworkShareAccesser" BaseTypeListCollapsed="true">
+    <Position X="6.5" Y="29.25" Width="10.75" />
+    <NestedTypes>
+      <Class Name="InkAlert.NetworkShareAccesser.NETRESOURCE" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Classes\NetworkShareAccesser.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Class>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>oAloIABEBCAAGkAACACIExAoFAgRMgCSBUCACCoATBQ=</HashCode>
+      <FileName>Classes\NetworkShareAccesser.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="InkAlert.Oid">
+    <Position X="0.5" Y="10.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>gAwKAgCAAEAAgABAAAAIDAAgAAAAAAAAAAAQAKCIGgA=</HashCode>
+      <FileName>Classes\Oid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterSnmpUpdate">
+    <Position X="27.25" Y="0.5" Width="3.75" />
+    <InheritanceLine Type="InkAlert.Database" FixedToPoint="true">
+      <Path>
+        <Point X="18.094" Y="1.25" />
+        <Point X="18.094" Y="0.26" />
+        <Point X="20.667" Y="0.26" Type="JumpStart" />
+        <Point X="20.833" Y="0.26" Type="JumpEnd" />
+        <Point X="29.562" Y="0.26" />
+        <Point X="29.562" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>gAECCICABAAAgAAAAAAACQAggAAAAIACAIAAAiCAAgA=</HashCode>
+      <FileName>Classes\Printer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterMake">
+    <Position X="25.75" Y="10.5" Width="5.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAEAAAAACAAAABAAgAAAAAAAAgAAAgACAAoA=</HashCode>
+      <FileName>Classes\PrinterMake.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterModel">
+    <Position X="31.25" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>CAQCBYAQAUCEAAUBCAAQIQhwEGAAAAAAAAGAAACBggU=</HashCode>
+      <FileName>Classes\PrinterModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterSerial">
+    <Position X="34.5" Y="0.5" Width="3" />
+    <InheritanceLine Type="InkAlert.Database" FixedToPoint="true">
+      <Path>
+        <Point X="23.406" Y="1.25" />
+        <Point X="23.406" Y="0.26" />
+        <Point X="36" Y="0.26" />
+        <Point X="36" Y="0.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQCAACAAEAAkAAAAAACCAAggAAAAIAAAAAAACCAAgA=</HashCode>
+      <FileName>Classes\PrinterSerial.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterSerie">
+    <Position X="0.5" Y="0.5" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAEAAAAABAAAABQAgAAAAAQAAAAEAAACAAgA=</HashCode>
+      <FileName>Classes\PrinterSeries.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.PrinterType">
+    <Position X="6.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAEAAAAgCAAAIBgAgAAAAAAAAAAAAAACAAgA=</HashCode>
+      <FileName>Classes\PrinterType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.StoredProcedureParameters">
+    <Position X="0.5" Y="35.5" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAIAAAACAAAAAIAAAACAAAAAAAA=</HashCode>
+      <FileName>Classes\StoredProcedureParameters.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Trick">
+    <Position X="11.5" Y="8" Width="13" />
+    <TypeIdentifier>
+      <HashCode>ABAAAAAAAAAAACAAAAAACAAAACAABAAAgAAAAAAQBAA=</HashCode>
+      <FileName>Classes\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Validation">
+    <Position X="0.5" Y="38.25" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Classes\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.ComboBoxItem">
+    <Position X="0.5" Y="21.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAgCAAAAAA=</HashCode>
+      <FileName>Classes\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.User">
+    <Position X="4" Y="11.5" Width="7.25" />
+    <TypeIdentifier>
+      <HashCode>AAQCAEAAAEBAAAAAAQAABAUgAAAEAAQCAAAUCgKgAgg=</HashCode>
+      <FileName>Classes\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.StartForm">
+    <Position X="41.5" Y="3.5" Width="7.25" />
+    <InheritanceLine Type="InkAlert.Forms.BaseForms.frmGeneralBase" FixedToPoint="true">
+      <Path>
+        <Point X="44.375" Y="2.761" />
+        <Point X="44.375" Y="3.5" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>BgBAmgQ0QKgBAgBER4CwAiQCIgQCNjgALEIxAQCgIIU=</HashCode>
+      <FileName>Start.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Controls.LightDatagrid">
+    <Position X="0.5" Y="26" Width="5.75" />
+    <TypeIdentifier>
+      <HashCode>AACFAAgEACAAAMBAEAKAIBJGkIAIAJAgAgBQAgCAEAE=</HashCode>
+      <FileName>Controls\LightDatagrid.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Controls.LoadingImage">
+    <Position X="6.5" Y="26.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAACAAAAAAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Controls\LoadingImage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="InkAlert.Forms.BaseForms.frmGeneralBase">
+    <Position X="42.5" Y="0.5" Width="3.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAABAAACAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Forms\BaseForms\frmGeneralBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="InkAlert.PrinterConnectionType">
+    <Position X="21.5" Y="21.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAQgAAAAEA=</HashCode>
+      <FileName>Classes\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="InkAlert.PrinterCommercialStatus">
+    <Position X="19.25" Y="21.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAIAAAAAAAAAAAAAgAEA=</HashCode>
+      <FileName>Classes\Tools.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

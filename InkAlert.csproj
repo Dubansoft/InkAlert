@@ -1,0 +1,736 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7897B8AD-18CF-4C80-8685-F586721E06EE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>InkAlert</RootNamespace>
+    <AssemblyName>InkAlert</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>InkAlert.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>inkalert.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C2C98B50BA6C1194395670C73375B8F55AA65977</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>InkAlert_ClaveTemporal.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Awesomium.Core">
+      <HintPath>bin\Release\Browser\Awesomium.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Controls, Version=1.7.5.1, Culture=neutral, PublicKeyToken=7a34e179b8b61c39, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Release\Browser\Awesomium SDK\1.7.5.1\wrappers\Awesomium.NET\Assemblies\Awesomium.Windows.Controls.dll</HintPath>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Forms">
+      <HintPath>bin\Release\Browser\Awesomium.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="IPAddressControlLib, Version=1.0.3039.20052, Culture=neutral, PublicKeyToken=9695e912950a5d9b">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\x86\Release\IPAddressControlLib.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>bin\Release\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>bin\Release\PDFSharp\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>bin\Release\PDFSharp\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="SnmpSharpNet">
+      <HintPath>bin\SnmpSharpNet.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Configuration.Install">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.ServiceProcess">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms.Ribbon35">
+      <HintPath>bin\System.Windows.Forms.Ribbon35.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Data">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Deployment">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Model\FilterView.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Model\FilterView.Designer.cs">
+      <DependentUpon>FilterView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Informe.cs" />
+    <Compile Include="Model\iCounterCycle.cs" />
+    <Compile Include="Model\Area.cs" />
+    <Compile Include="Model\DataGridViewColumnSelector.cs" />
+    <Compile Include="Model\Database.cs" />
+    <Compile Include="Model\DateEngine.cs" />
+    <Compile Include="Model\FileManager.cs" />
+    <Compile Include="Model\GlobalSetup.cs" />
+    <Compile Include="Model\Consumable.cs" />
+    <Compile Include="Model\NetworkShareAccesser.cs" />
+    <Compile Include="Model\Oid.cs" />
+    <Compile Include="Model\Printer.cs" />
+    <Compile Include="Model\PrinterMake.cs" />
+    <Compile Include="Model\PrinterModel.cs" />
+    <Compile Include="Model\PrinterSerial.cs" />
+    <Compile Include="Model\PrinterSeries.cs" />
+    <Compile Include="Model\PrinterType.cs" />
+    <Compile Include="Model\StoredProcedureParameters.cs" />
+    <Compile Include="Model\Location.cs" />
+    <Compile Include="Model\Tools.cs" />
+    <Compile Include="Model\WebCapture.cs" />
+    <Compile Include="UserControls\frmDatagrid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserControls\frmDatagrid.Designer.cs">
+      <DependentUpon>frmDatagrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LoadingImage.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\LoadingImage.Designer.cs">
+      <DependentUpon>LoadingImage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControls\LightDatagrid.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserControls\LightDatagrid.Designer.cs">
+      <DependentUpon>LightDatagrid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmCounterList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmCounterList.Designer.cs">
+      <DependentUpon>frmCounterList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmiCounterCycle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmiCounterCycle.Designer.cs">
+      <DependentUpon>frmiCounterCycle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmiCounterCyclesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\iCounterCycleForms\frmiCounterCyclesEdit.designer.cs">
+      <DependentUpon>frmiCounterCyclesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AreaForms\frmAreas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AreaForms\frmAreas.Designer.cs">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\AreaForms\frmAreasEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\AreaForms\frmAreasEdit.designer.cs">
+      <DependentUpon>frmAreasEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\BaseForms\frmGeneralBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\BaseForms\frmGeneralBase.Designer.cs">
+      <DependentUpon>frmGeneralBase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsoleWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsoleWindow.Designer.cs">
+      <DependentUpon>ConsoleWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumableEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumableEdit.designer.cs">
+      <DependentUpon>frmConsumableEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumableInstall.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumableInstall.Designer.cs">
+      <DependentUpon>frmConsumableInstall.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\MonthlyReportForms\frmMonthlyReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\MonthlyReportForms\frmMonthlyReport.Designer.cs">
+      <DependentUpon>frmMonthlyReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocationForms\frmLocationsEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocationForms\frmLocationsEdit.designer.cs">
+      <DependentUpon>frmLocationsEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\LocationForms\frmLocations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\LocationForms\frmLocations.Designer.cs">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumables.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\ConsumableForms\frmConsumables.Designer.cs">
+      <DependentUpon>frmConsumables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OidForms\frmNewOidType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OidForms\frmNewOidType.Designer.cs">
+      <DependentUpon>frmNewOidType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmChangePrinterCommercialStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmChangePrinterCommercialStatus.Designer.cs">
+      <DependentUpon>frmChangePrinterCommercialStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmManualUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmManualUpdate.Designer.cs">
+      <DependentUpon>frmManualUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrinterStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrinterStatus.Designer.cs">
+      <DependentUpon>frmPrinterStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrintersDetails.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrintersDetails.designer.cs">
+      <DependentUpon>frmPrintersDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrintersEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrintersEdit.designer.cs">
+      <DependentUpon>frmPrintersEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterForms\frmPrintersUpdateWorker.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterMakeForms\frmPrinterMakes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterMakeForms\frmPrinterMakes.Designer.cs">
+      <DependentUpon>frmPrinterMakes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterMakeForms\frmPrinterMakesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterMakeForms\frmPrinterMakesEdit.designer.cs">
+      <DependentUpon>frmPrinterMakesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OidForms\frmOid.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OidForms\frmOid.Designer.cs">
+      <DependentUpon>frmOid.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\OidForms\frmOidEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\OidForms\frmOidEdit.designer.cs">
+      <DependentUpon>frmOidEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterModelForms\frmPrinterModel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterModelForms\frmPrinterModel.Designer.cs">
+      <DependentUpon>frmPrinterModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterModelForms\frmPrinterModelEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterModelForms\frmPrinterModelEdit.designer.cs">
+      <DependentUpon>frmPrinterModelEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterSeriesForms\frmPrinterSeries.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterSeriesForms\frmPrinterSeries.Designer.cs">
+      <DependentUpon>frmPrinterSeries.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterSeriesForms\frmPrinterSeriesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterSeriesForms\frmPrinterSeriesEdit.designer.cs">
+      <DependentUpon>frmPrinterSeriesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterTypeForms\frmPrinterTypes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterTypeForms\frmPrinterTypes.Designer.cs">
+      <DependentUpon>frmPrinterTypes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterTypeForms\frmPrinterTypesEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterTypeForms\frmPrinterTypesEdit.designer.cs">
+      <DependentUpon>frmPrinterTypesEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\SettingsForm\frmSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\SettingsForm\frmSettings.Designer.cs">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserForms\frmUserEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForms\frmUserEdit.Designer.cs">
+      <DependentUpon>frmUserEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserForms\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForms\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\UserForms\frmUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\UserForms\frmUsers.Designer.cs">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\PrinterSerialForms\frmPrinterSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\PrinterSerialForms\frmPrinterSerial.designer.cs">
+      <DependentUpon>frmPrinterSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Model\PrinterMachine.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Settings.cs" />
+    <Compile Include="Start.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Start.Designer.cs">
+      <DependentUpon>Start.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Model\FilterView.resx">
+      <DependentUpon>FilterView.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\frmDatagrid.resx">
+      <DependentUpon>frmDatagrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LoadingImage.resx">
+      <DependentUpon>LoadingImage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\LightDatagrid.resx">
+      <DependentUpon>LightDatagrid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\iCounterCycleForms\frmCounterList.resx">
+      <DependentUpon>frmCounterList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\iCounterCycleForms\frmiCounterCycle.resx">
+      <DependentUpon>frmiCounterCycle.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\iCounterCycleForms\frmiCounterCyclesEdit.resx">
+      <DependentUpon>frmiCounterCyclesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AreaForms\frmAreas.resx">
+      <DependentUpon>frmAreas.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\AreaForms\frmAreasEdit.resx">
+      <DependentUpon>frmAreasEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\BaseForms\frmGeneralBase.resx">
+      <DependentUpon>frmGeneralBase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsoleWindow.resx">
+      <DependentUpon>ConsoleWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsumableForms\frmConsumableEdit.resx">
+      <DependentUpon>frmConsumableEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsumableForms\frmConsumableInstall.resx">
+      <DependentUpon>frmConsumableInstall.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\ConsumableForms\frmConsumables.resx">
+      <DependentUpon>frmConsumables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\iCounterCycleForms\frmiCounterCyclesEdit.yo.resx">
+      <DependentUpon>frmiCounterCyclesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\MonthlyReportForms\frmMonthlyReport.resx">
+      <DependentUpon>frmMonthlyReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocationForms\frmLocationsEdit.resx">
+      <DependentUpon>frmLocationsEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\LocationForms\frmLocations.resx">
+      <DependentUpon>frmLocations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OidForms\frmNewOidType.resx">
+      <DependentUpon>frmNewOidType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterForms\frmChangePrinterCommercialStatus.resx">
+      <DependentUpon>frmChangePrinterCommercialStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterForms\frmManualUpdate.resx">
+      <DependentUpon>frmManualUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterForms\frmPrinterStatus.resx">
+      <DependentUpon>frmPrinterStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterForms\frmPrintersDetails.resx">
+      <DependentUpon>frmPrintersDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterForms\frmPrintersEdit.resx">
+      <DependentUpon>frmPrintersEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterMakeForms\frmPrinterMakes.resx">
+      <DependentUpon>frmPrinterMakes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterMakeForms\frmPrinterMakesEdit.resx">
+      <DependentUpon>frmPrinterMakesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OidForms\frmOid.resx">
+      <DependentUpon>frmOid.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\OidForms\frmOidEdit.resx">
+      <DependentUpon>frmOidEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterModelForms\frmPrinterModel.resx">
+      <DependentUpon>frmPrinterModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterModelForms\frmPrinterModelEdit.resx">
+      <DependentUpon>frmPrinterModelEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterSeriesForms\frmPrinterSeries.resx">
+      <DependentUpon>frmPrinterSeries.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterSeriesForms\frmPrinterSeriesEdit.resx">
+      <DependentUpon>frmPrinterSeriesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterTypeForms\frmPrinterTypes.resx">
+      <DependentUpon>frmPrinterTypes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterTypeForms\frmPrinterTypesEdit.resx">
+      <DependentUpon>frmPrinterTypesEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\SettingsForm\frmSettings.resx">
+      <DependentUpon>frmSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForms\frmUserEdit.resx">
+      <DependentUpon>frmUserEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForms\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\UserForms\frmUsers.resx">
+      <DependentUpon>frmUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\PrinterSerialForms\frmPrinterSerial.resx">
+      <DependentUpon>frmPrinterSerial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Start.resx">
+      <DependentUpon>Start.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="ClassDiagram2.cd" />
+    <None Include="ClassDiagram3.cd" />
+    <None Include="InkAlert_ClaveTemporal.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_color.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\office-building.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script_key.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Datasources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\key_add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer_color1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="inkalert.ico" />
+    <None Include="Resources\Printing-Quill-With-Ink-icon.png" />
+    <None Include="Resources\source_code1.png" />
+    <None Include="Resources\source_code.png" />
+    <None Include="Resources\table_select_column.png" />
+    <None Include="Resources\transform_rotate.png" />
+    <None Include="Resources\winrar_view.png" />
+    <None Include="Resources\stopwatch_start.png" />
+    <None Include="Resources\stopwatch_finish.png" />
+    <None Include="Resources\ssh_shell_access.png" />
+    <None Include="Resources\zoom_refresh.png" />
+    <None Include="Resources\update.png" />
+    <None Include="Resources\page_edit.png" />
+    <None Include="Resources\loading-animation.gif" />
+    <None Include="Resources\bullet_edit.png" />
+    <None Include="Resources\edit_button.png" />
+    <None Include="Resources\delete.png" />
+    <None Include="Resources\arrow_refresh.png" />
+    <None Include="Resources\arrow_refresh1.png" />
+    <None Include="Resources\network_tools.png" />
+    <None Include="Resources\network-share.png" />
+    <None Include="Resources\ip.png" />
+    <None Include="Resources\globe_network.png" />
+    <None Include="Resources\network_folder.png" />
+    <None Include="Resources\key_add1.png" />
+    <None Include="Resources\globe_network1.png" />
+    <None Include="Resources\InkAlert.PNG" />
+    <None Include="Resources\chart_line.png" />
+    <None Include="Resources\hostname.png" />
+    <None Include="Resources\application_view_icons.png" />
+    <None Include="Resources\diagnostic_chart.png" />
+    <None Include="Resources\ink_icon.jpg" />
+    <None Include="Resources\draw_ink.png" />
+    <None Include="Resources\magic_wand_2.png" />
+    <None Include="Resources\edit_path.png" />
+    <None Include="Resources\monitor_window_3d.png" />
+    <None Include="Resources\file_extension_pdf.png" />
+    <None Include="Resources\file_extension_txt.png" />
+    <None Include="Resources\data_table.png" />
+    <None Include="Resources\back.jpg" />
+    <None Include="Resources\logoff.png" />
+    <Content Include="Resources\offline.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\setting_tools.png" />
+    <None Include="Resources\online.png" />
+    <None Include="Resources\offline.png" />
+    <None Include="Resources\offline.ico.bmp" />
+    <None Include="Resources\oil.png" />
+    <Content Include="Resources\online.ico">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DateHelper\DateHelper.csproj">
+      <Project>{794b3caa-8d44-462b-b0f8-2927dfd270fd}</Project>
+      <Name>DateHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileHelper\FileHelper.csproj">
+      <Project>{c4995535-ba1a-45b2-b831-de1c7c70b12d}</Project>
+      <Name>FileHelper</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormValidation\FormValidation.csproj">
+      <Project>{37058146-2ef0-4c36-956a-c87e60d7af5b}</Project>
+      <Name>FormValidation</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MySqlDatabaseHelper\MySqlDatabaseHelper.csproj">
+      <Project>{a85f314c-7aaa-4708-8091-dfaf2ff0d543}</Project>
+      <Name>MySqlDatabaseHelper</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets" Condition="Exists('..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este proyecto hace referencia a los paquetes NuGet que faltan en este equipo. Use la restauración de paquetes NuGet para descargarlos. Para obtener más información, consulte http://go.microsoft.com/fwlink/?LinkID=322105. El archivo que falta es {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x64.3.2623.1401\build\cef.redist.x64.targets'))" />
+    <Error Condition="!Exists('..\packages\cef.redist.x86.3.2623.1401\build\cef.redist.x86.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\cef.redist.x86.3.2623.1401\build\cef.redist.x86.targets'))" />
+  </Target>
+  <Import Project="..\packages\cef.redist.x86.3.2623.1401\build\cef.redist.x86.targets" Condition="Exists('..\packages\cef.redist.x86.3.2623.1401\build\cef.redist.x86.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
